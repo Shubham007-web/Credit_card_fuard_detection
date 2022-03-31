@@ -4,5 +4,5 @@ This dataset presents transactions that occurred in two days, where we have 492 
 - It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the dataset cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 - In this project, I directly call dataset from [kaggle.com/dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 - I used LogisiticRgression for classified prediction. 
-- This data is higly imblace ,thus I did clean some data prediction.
-- I saved trained model weights with joblib python library for making prediction with train data again and again.
+- This data is higly imblace ,thus I did clean some data for prediction.
+- I saved trained model weights with joblib python library for making prediction with train data again and again. Which is also use to deploy our model. 
